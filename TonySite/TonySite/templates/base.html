@@ -1,0 +1,65 @@
+<html>
+<head>
+	<link href="{{ STATIC_URL }}base.css"  rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="{{ STATIC_URL }}js/header.js"></script>
+	<script src="{{ STATIC_URL }}js/info.js"></script>
+	{% block include %}{% endblock %}
+</head>
+<body>
+	<div id="main-site">
+		<div id="main-container">
+			<img src="{{ STATIC_URL }}img/mainImage.jpeg">
+			<div id="header">
+				<div id="profile" class="header-div">
+					<h2>profile</h2>
+
+				</div>
+				<div id="portfolio" class="header-div">
+					<h2>portfolio</h2>
+
+				</div>
+				<div class="list primary-list list-port" id="primary-list-portfolio"></div>
+				<div class="list secondary-list list-port white-div" id="secondary-list-portfolio"></div>
+				<div id="persons" class="header-div">
+					<h2>persons</h2>
+
+				</div>
+				<div class="list primary-list list-pers white-div" id="primary-list-persons"></div>
+			</div>
+		</div>
+		<div id="menu-container">
+			<div class="menu-div" id="home"><h2>home</h2>
+			</div>
+			<div class="menu-div" id="contact"><h2>contact</h2>
+			</div>
+			<div class="menu-div" id="news"><h2>news</h2>
+			</div>
+		</div>
+		<div id="company-stamp">
+			<span class="white">
+				<h1>W+</h1>
+				<h1>CO</h1>
+				<h3>weberandcompany_architecture</h3>
+			</span>
+		</div>
+			<div id="info-box">
+
+			</div>
+			<div id='contact-info'>
+					<span class="white">
+						<h3>weberandcompany_architecture</h3>
+						<div id="contact-info-text">
+							<p>715 south third street</p>
+							<p>philadelphia pa 19147</p>
+							<p>p.215 922 2499</p>
+							<p>e.inquiry@wcarc.com</p>
+							<p>www.wcoarc.com</p>
+							<p>maps.google.com/search?q=715+south+3rd+street+</p>
+							<p>philadelphia+pa&oq</p>
+
+						</div>
+					</span>	
+				</div>
+	</div>
+</body>
