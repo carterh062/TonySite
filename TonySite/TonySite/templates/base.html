@@ -19,7 +19,11 @@
 					<h2>portfolio</h2>
 
 				</div>
-				<div class="list primary-list list-port" id="primary-list-portfolio"></div>
+				<div class="list primary-list list-port" id="primary-list-portfolio">
+					{% for ptype in ptypes %}
+						<p>{{ ptype }}</p>
+					{% endfor %}
+				</div>
 				<div class="list secondary-list list-port white-div" id="secondary-list-portfolio"></div>
 				<div id="persons" class="header-div">
 					<h2>persons</h2>
