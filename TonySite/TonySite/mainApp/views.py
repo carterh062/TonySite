@@ -7,5 +7,5 @@ def homeView(request):
 	for portfolio in portfolios:
 		if not ((portfolio.ptype in ptypes)):
 			ptypes.append(portfolio.ptype)
-
+	print ptypes
 	return render(request,'base.html',{'ptypes': ptypes})

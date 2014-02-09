@@ -4,6 +4,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="{{ STATIC_URL }}js/header.js"></script>
 	<script src="{{ STATIC_URL }}js/info.js"></script>
+	<script src="{{ STATIC_URL }}js/portfolio.js"></script>
 	{% block include %}{% endblock %}
 </head>
 <body>
@@ -20,16 +21,32 @@
 
 				</div>
 				<div class="list primary-list list-port" id="primary-list-portfolio">
-					{% for ptype in ptypes %}
-						<p>{{ ptype }}</p>
-					{% endfor %}
+					
+					
+					<h3 id="education">education</h3>
+					<h3 id="commercial">commercial</h3>
+					<h3 id="residential">residential</h3>
+					<h3 id="cultural">cultural</h3>
+					<h3 id="sports">sports + leisure</h3>
+					
+
 				</div>
 				<div class="list secondary-list list-port white-div" id="secondary-list-portfolio"></div>
+				<div class="list-port" id="s-p-list-con">
+					<div id="s-p-list" class="list-spec">
+					</div>
+				</div>
 				<div id="persons" class="header-div">
 					<h2>persons</h2>
 
 				</div>
-				<div class="list primary-list list-pers white-div" id="primary-list-persons"></div>
+				<div class="list secondary-list list-pers white-div" id="primary-list-persons"></div>
+				<div class="list-pers" id="s-p-list-pers">
+					<h4>Tony Weber</h4>
+					<h4>Some Guy</h4>
+					<h4>Some Guy</h4>
+
+				</div>
 			</div>
 		</div>
 		<div id="menu-container">
