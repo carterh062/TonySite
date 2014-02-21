@@ -3,10 +3,9 @@
     src: url("fonts/optima.ttf");
 }
 #main-site{
-	margin: auto;
+	margin-left: 0;
 	position: relative;
-	top: 50%;
-	margin-top: -300px;
+	
 	width:1200px;
 	height:600px;
 }
@@ -16,49 +15,67 @@
 	top: 50%;
 	margin-top: -300px;
 	width:800px;
-	height:500px;
+	height:600px;
 	float: left;
 }
-#main-container > img{
-	display: block;
-	top: 50%;
+#slideshow{
+	margin: auto;
+	position: relative;
+	top:50%;
+	margin-top: -300px;
+	width:800px;
+	height:600px;
+}
+#slideshow > img{
 	margin-left: auto;
 	margin-right: auto;
 	width:1000px;
+	top: 0;
+	position: absolute;
 	height:600px;
-	z-index: 1;
+	z-index: -2;
 }
 body{
 	background-color: black;
+	margin-left: 0px;
 }
 h2{
-	color: gray;
+	color: white;
 	font-weight: normal;
 	font-family: Optima;
 	font-size: 24px;
 }
+#footer{
+	position: absolute;
+	bottom: 0%;
+	height: 105px;
+	width: 1030px;
+	z-index: 0;
+	background-color: rgba(0,0,0,.5);
+}
 #header{
 	position: absolute;
-	top: 50%;
-	margin-top: -225px;
-	width: 1000px;
+	top: 0%;
+	width: 1030px;
 	height: 50px;
 	font-size: 0px;
-	margin-left: 40px;
 	cursor: pointer;
+	background-color: rgba(0,0,0,.5);
 }
 #primary-list-portfolio{
 	text-align: left;
+	background-color: rgba(0,0,0,.1);
 }
 #primary-list-portfolio > h3{
 	margin-left: 50px;
 	margin-bottom: 10px;
-	color: gray;
+	color: white;
 	font-family: Optima;
+	background-color: rgba(0,0,0,.1);
 	font-weight: normal;
 }
 #primary-list-portfolio > h3:hover{
-	color: white;
+	color: gray;
 }
 #menu-container{
 	margin-right: 0px;
@@ -90,7 +107,8 @@ h1{
 #company-stamp{
 	position: absolute;
 	top: 75%;
-	margin-top: 53px;
+	z-index: 1;
+	margin-top: 30px;
 	margin-left: 40px;
 }
 .header-div {
@@ -99,6 +117,7 @@ h1{
     height:50px;
     margin: 0;
     line-height: 25px;
+    z-index: 1;
     color: black;
     text-align: center;
 }
@@ -129,6 +148,7 @@ h5 {
 	margin-top: ;
 	background-color: #9b9b9b;
 	opacity: .65;
+	z-index: 1;
 	margin-left: 900px;
 }
 .white > h3{
@@ -149,7 +169,7 @@ h3{
 	opacity: 0.65;
 }
 .menu-div > h2:hover{
-	color: white;
+	color: gray;
 	cursor: pointer;
 }
 #contact-info{
@@ -158,13 +178,14 @@ h3{
 	display: none;
 	margin-top: 300px;
 	width:300px;
-	background-color: transparent;
 	margin-left: 900px;
+	z-index: 1;
 }
 #contact-info-text{
 	width: 200px;
 	height: 400px;
 	text-align: left;
+	z-index: 1;
 	margin-left: 30px;
 }
 #contact-info-text > p{

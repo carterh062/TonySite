@@ -5,12 +5,20 @@
 	<script src="{{ STATIC_URL }}js/header.js"></script>
 	<script src="{{ STATIC_URL }}js/info.js"></script>
 	<script src="{{ STATIC_URL }}js/portfolio.js"></script>
+	<script src="{{ STATIC_URL }}js/slideshow.js"></script>
 	{% block include %}{% endblock %}
 </head>
 <body>
 	<div id="main-site">
 		<div id="main-container">
-			<img src="{{ STATIC_URL }}img/mainImage.jpeg">
+			<div id="slideshow">
+
+				<img src="{{ STATIC_URL }}img/mainImage.jpeg">
+				<img src="{{ STATIC_URL }}img/img.jpg" style="left: 30px;">
+				<img src="{{ STATIC_URL }}img/img2.jpg">
+				
+			</div>
+			
 			<div id="header">
 				<div id="profile" class="header-div">
 					<h2>profile</h2>
@@ -81,6 +89,7 @@
 
 						</div>
 					</span>	
-				</div>
+			</div>
+			<div id="footer"></div>
 	</div>
 </body>
