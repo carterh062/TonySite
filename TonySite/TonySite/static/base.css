@@ -2,255 +2,151 @@
     font-family: Optima;
     src: url("fonts/optima.ttf");
 }
-#main-site{
-	margin-left: 0;
-	position: relative;
-	
-	width:1200px;
-	height:600px;
-}
-#main-container{
-	margin: auto;
-	position: relative;
-	top: 50%;
-	margin-top: -300px;
-	width:800px;
-	height:600px;
-	float: left;
-}
-#slideshow{
-	margin: auto;
-	position: relative;
-	top:50%;
-	margin-top: -300px;
-	width:800px;
-	height:600px;
-}
-#slideshow > img{
-	margin-left: auto;
-	margin-right: auto;
-	width:1000px;
-	top: 0;
-	position: absolute;
-	height:600px;
-	z-index: -2;
+*{
+	color: white;
 }
 body{
 	background-color: black;
-	margin-left: 0px;
+	margin: auto;
+	height: 100%;
 }
 h2{
-	color: white;
 	font-weight: normal;
 	font-family: Optima;
 	font-size: 24px;
 }
-#footer{
-	position: absolute;
-	bottom: 0%;
-	height: 105px;
-	width: 1030px;
-	z-index: 0;
-	background-color: rgba(0,0,0,.5);
-}
-#header{
-	position: absolute;
-	top: 0%;
-	width: 1030px;
-	height: 50px;
-	font-size: 0px;
-	cursor: pointer;
-	background-color: rgba(0,0,0,.5);
-}
-#primary-list-portfolio{
-	text-align: left;
-	background-color: rgba(0,0,0,.1);
-}
-#primary-list-portfolio > h3{
-	margin-left: 50px;
-	margin-bottom: 10px;
-	color: white;
-	font-family: Optima;
-	background-color: rgba(0,0,0,.1);
-	font-weight: normal;
-}
-#primary-list-portfolio > h3:hover{
-	color: gray;
-}
-#menu-container{
-	margin-right: 0px;
-	margin-top: 30px;
-	width: 200px;
-	height: 100%;
-	float: right;
-}
-.menu-div{
-	margin-bottom: 50px;
-	text-align: right;
-	margin-right: 30px;
-}
-.white{
-	color: white;	
-}
 h1{
 	line-height: 20px;
-	font-size: 3em;
+	font-size: 5em;
 	font-family: Optima;
 	font-weight: normal;
-}
-#company-stamp > h3{
-	font-family: Optima;
-	font-weight: normal;
-	margin-left: -10px;
-	margin-top: -17px;
-}
-#company-stamp{
-	position: absolute;
-	top: 75%;
-	z-index: 1;
-	margin-top: 30px;
-	margin-left: 40px;
-}
-.header-div {
-    display: inline-block;
-    width:175px;
-    height:50px;
-    margin: 0;
-    line-height: 25px;
-    z-index: 1;
-    color: black;
-    text-align: center;
 }
 h5 {
     font-size:17px;
     background-color: transparent;
 }
-.list {
-    height:400px;
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
-    font-size: 0px;
-    vertical-align: top;
-}
-.list-pers {
-    width: 0%;
-}
-.list-port {
-    width: 0%;
-}
-#info-box{
-	position: absolute;
-	height: 1000px;
-	margin-top: 300px;
-	display: none;
-	width:300px;
-	margin-top: ;
-	background-color: #9b9b9b;
-	opacity: .65;
-	z-index: 1;
-	margin-left: 900px;
-}
-.white > h3{
-	margin-left: 5px;
-}
 h3{
 	font-family: Optima;
 	font-weight: normal;
-	color: white;
+}
+#main-site{
+	margin: auto;
+	position: relative;
+	margin-top: -350px;
+	width:80%;
+	top: 50%;
+	height:700;
+}
+#left{
+	float: left;
+	width: 50%;
+	height:100%;
+}
+#slideshow{
+	margin: auto;
+	position: relative;
+	margin-top: -175px;
+	top :50%;
+	width:80%;
+	height:50%;
+	margin-left: 5px;
+}
+#slide-buttons{
+	margin: auto;
+	margin-top :60%;
+	margin-left: 5px;
+	border: 1px solid green;
+	display: inline-block;
+	width: 85%;
+	height: 10%;
+}
+#slideshow > img{
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
+	top: 0;
+	position: absolute;
+	height:100%;
+	z-index: -2;
 }
 
-.primary-list {
-}
-.secondary-list {
-}
-.white-div{
+
+#middle{
+	display: inline-block;
 	background-color: white;
-	opacity: 0.65;
+	width: 1px;
+	margin-left: 20px;
+	height: 100%;
 }
-.menu-div > h2:hover{
-	color: gray;
+
+
+#right{
+	float: right;
+	width: 45%;
+	height: 100%;
+}
+#header{
+	width: 100%;
+	text-align: center;
+	height: 10%;
+}
+#menu{
+	width: 100%;
+	height: 50%;
+	margin-top: 10px;
+}
+#persons{
+	margin-top: -15px;
+}
+.menu-div{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.menu-div:hover{
 	cursor: pointer;
 }
+#primary-list-portfolio{
+	height: 0px;
+	overflow: hidden;
+	margin-left: 50px;
+}
+#primary-list-persons{
+	height: 0px;
+	overflow: hidden;
+	margin-left: 50px;
+}
+.portfolio-element{
+	margin: 0;
+	margin-bottom: 15px;
+}
+.persons-element{
+	margin: 0;
+	margin-bottom: 15px;
+}
+.portfolio-element:hover{
+	cursor: pointer;
+}
+.portfolio-list{
+	height: 0px;
+	overflow: hidden;
+	margin-left: 100px;
+}
 #contact-info{
-	position: absolute;
-	height: 1000px;
-	display: none;
-	margin-top: 300px;
-	width:300px;
-	margin-left: 900px;
-	z-index: 1;
+	width:100%;
+	text-align: center;
+	margin-top: 100px;
+}
+.gray{
+	color: gray;
 }
 #contact-info-text{
-	width: 200px;
-	height: 400px;
-	text-align: left;
-	z-index: 1;
-	margin-left: 30px;
+	text-align: center;
 }
 #contact-info-text > p{
 	font-size: 18px;
 	font-family: Optima;
 	line-height: 20px;
 	font-weight: normal;
-	margin:0px;
-}
-.secondary-list{
-	margin-top: -50%;
-
-	height:750px;
-}
-#s-p-list-con{
-	margin-top: -500px;
-	position: absolute;
-	margin-left: 400px;
-
-	height:800px;
-	width:0%;
-	z-index: 10;
-	color: black;
-}
-#s-p-list-pers{
-	margin-top: -380px;
-	position: absolute;
-	margin-left: 375px;
-	height:800px;
-	width:0%;
-	z-index: 10;
-	color: black;
-}
-#s-p-list-pers > h4{
-	color: gray;
 	margin-bottom: 0px;
 	margin-top: 0px;
-	font-family: Optima;
-	margin-left: 20px;
-	font-weight: normal;
-}
-#s-p-list-pers > h4:hover{
-	color: white;
-}
-#s-p-list{
-	margin-top: 95px;
-	color: gray;
-	z-index: -10;
-	text-align: left;
-	overflow: auto;
-}
-#s-p-list > h4{
-	color: gray;
-	margin-left: 20px;
-	font-weight: normal;
-	margin-bottom: 0px;
-	font-family: Optima;
-}
-
-#s-p-list > a{
-	margin-left: 60px;
-	color: gray;
-	font-family: Optima;
-	text-decoration: none;
-}
-#s-p-list > a:hover{
-	color: white;
 }

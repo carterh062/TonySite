@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div id="main-site">
-		<div id="main-container">
+		<div id="left">
 			<div id="slideshow">
 
 				<img src="{{ STATIC_URL }}img/1.jpg">
@@ -18,78 +18,78 @@
 				<img src="{{ STATIC_URL }}img/3.jpg">
 				
 			</div>
-			
+			<div id="slide-buttons">
+			</div>
+		</div>
+		<div id="middle">
+		</div>
+		<div id="right">
 			<div id="header">
-				<div id="profile" class="header-div">
+				<h1>W+CO</h1>
+			</div>
+			<div id="menu">
+				<div id="profile" class="menu-div">
 					<h2>profile</h2>
 
 				</div>
-				<div id="portfolio" class="header-div">
+				<div id="portfolio" class="menu-div">
 					<h2>portfolio</h2>
 
 				</div>
-				<div class="list primary-list list-port" id="primary-list-portfolio">
+				<div id="primary-list-portfolio">
 					
 					
-					<h3 id="education">education</h3>
-					<h3 id="commercial">commercial</h3>
-					<h3 id="residential">residential</h3>
-					<h3 id="cultural">cultural</h3>
-					<h3 id="sports">sports + leisure</h3>
-					
-
-				</div>
-				<div class="list secondary-list list-port white-div" id="secondary-list-portfolio"></div>
-				<div class="list-port" id="s-p-list-con">
-					<div id="s-p-list" class="list-spec">
+					<h3 class="portfolio-element"  id="education">education</h3>
+					<div id="list-education" class="portfolio-list">
+						<h3>Tony Weber</h3>
+						<h3>Some Guy</h3>
+						<h3>Some Guy</h3>
 					</div>
+					<h3 class="portfolio-element"  id="commercial">commercial</h3>
+					<div id="list-commercial" class="portfolio-list">
+						<h3>Tony Weber</h3>
+						<h3>Some Guy</h3>
+						<h3>Some Guy</h3>
+					</div>
+					<h3 class="portfolio-element" id="residential">residential</h3>
+					<div id="list-residential" class="portfolio-list">
+						<h3>Tony Weber</h3>
+						<h3>Some Guy</h3>
+						<h3>Some Guy</h3>
+					</div>
+					<h3 class="portfolio-element"  id="cultural">cultural</h3>
+					<div id="list-cultural" class="portfolio-list">
+						<h3>Tony Weber</h3>
+						<h3>Some Guy</h3>
+						<h3>Some Guy</h3>
+					</div>
+					<h3 class="portfolio-element" id="sports">sports + leisure</h3>
+					<div id="list-sports" class="portfolio-list">
+						<h3>Tony Weber</h3>
+						<h3>Some Guy</h3>
+						<h3>Some Guy</h3>
+					</div>
+					
+
 				</div>
-				<div id="persons" class="header-div">
+				<div id="persons" class="menu-div">
 					<h2>persons</h2>
+				</div>
+				<div id="primary-list-persons">
+					<h3 class="persons-element">Tony Weber</h3>
+					<h3 class="persons-element">Some Guy</h3>
+					<h3 class="persons-element">Some Guy</h3>
 
 				</div>
-				<div class="list secondary-list list-pers white-div" id="primary-list-persons"></div>
-				<div class="list-pers" id="s-p-list-pers">
-					<h4>Tony Weber</h4>
-					<h4>Some Guy</h4>
-					<h4>Some Guy</h4>
-
-				</div>
-			</div>
-		</div>
-		<div id="menu-container">
-			<div class="menu-div" id="home"><h2>home</h2>
-			</div>
-			<div class="menu-div" id="contact"><h2>contact</h2>
-			</div>
-			<div class="menu-div" id="news"><h2>news</h2>
-			</div>
-		</div>
-		<div id="company-stamp">
-			<span class="white">
-				<h1>W+</h1>
-				<h1>CO</h1>
-				<h3>weberandcompany_architecture</h3>
-			</span>
-		</div>
-			<div id="info-box">
-
 			</div>
 			<div id='contact-info'>
-					<span class="white">
-						<h3>weberandcompany_architecture</h3>
-						<div id="contact-info-text">
-							<p>715 south third street</p>
-							<p>philadelphia pa 19147</p>
-							<p>p.215 922 2499</p>
-							<p>e.inquiry@wcarc.com</p>
-							<p>www.wcoarc.com</p>
-							<p>maps.google.com/search?q=715+south+3rd+street+</p>
-							<p>philadelphia+pa&oq</p>
-
-						</div>
-					</span>	
+				<div id="contact-info-text">
+					<p>weberandcompany_<span class="gray">architecture</span></p>
+					<p>715 south third street</p>
+					<p>philadelphia pennsylvania 19147</p>
+					<p>215 922 2499  <a>www.wcoarc.com</a></p>
+				</div>
 			</div>
-			<div id="footer"></div>
+		</div>
 	</div>
 </body>
