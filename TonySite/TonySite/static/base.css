@@ -33,9 +33,18 @@ h3{
 	margin: auto;
 	position: relative;
 	margin-top: -350px;
-	width:1000px;
+	width:1200px;
 	top: 50%;
 	height:700;
+}
+#slide-cover{
+	background-color: black;
+	float: left;
+	width: 450px;
+	margin-left: -452px;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
 }
 #left{
 	float: left;
@@ -53,11 +62,28 @@ h3{
 }
 #slide-buttons{
 	margin: auto;
-	margin-top: 350px;
-	border: 1px solid green;
+	margin-top: 370px;
 	display: inline-block;
 	width: 455px;
 	height: 75px;
+}
+#slide-buttons > img{
+	width: 100px;
+	height: 75px;
+	opacity: .75;
+}
+#slide-buttons > img:hover{
+	opacity: 1.0;
+	cursor: pointer;
+}
+#prev{
+	float: left;
+}
+#stop{
+	margin-left: 75px;
+}
+#next{
+	float: right;
 }
 #slideshow > img{
 	margin-left: auto;
@@ -86,13 +112,12 @@ h3{
 }
 #header{
 	width: 100%;
-	text-align: center;
+	position: absolute;
 	height: 10%;
 }
 #menu{
-	width: 100%;
-	height: 50%;
-	margin-top: 10px;
+	margin-left: -175px;
+	margin-top: 150px;
 }
 #persons{
 	margin-top: -15px;
@@ -128,20 +153,33 @@ h3{
 .portfolio-list{
 	height: 0px;
 	overflow: auto;
-	background-color: rgba(30,0,0,.8);
 	text-align: center;
 	width: 250px;
 }
 .portfolio-list::-webkit-scrollbar { 
     display: none; 
 }
+.info-ele:hover{
+	color: gray;
+	cursor: pointer;
+}
 #contact-info{
-	width:100%;
-	text-align: center;
-	margin-top: 100px;
+	position: absolute;
+	top: 600px;
 }
 .gray{
 	color: gray;
+}
+#info-box{
+	width: 300px;
+	position: absolute;
+	margin-left: 100px;
+	height: 400px;
+	overflow: auto;
+	margin-top: 150px;
+}
+#info-content{
+	margin-left: 10px;
 }
 #contact-info-text{
 	text-align: center;

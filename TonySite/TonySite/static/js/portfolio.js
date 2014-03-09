@@ -7,7 +7,7 @@ $(document).ready(function () {
         $('#education').css('color', 'gray');
         $('#commercial').css('color', 'white');
         $('#residential').css('color', 'white');
-        $('#cultural').css('color', 'white');
+        $('#healthcare').css('color', 'white');
         $('#sports').css('color', 'white');
 	});
 	$("#commercial").hover(function () {
@@ -17,7 +17,7 @@ $(document).ready(function () {
         $('#education').css('color', 'white');
         $('#commercial').css('color', 'gray');
         $('#residential').css('color', 'white');
-        $('#cultural').css('color', 'white');
+        $('#healthcare').css('color', 'white');
         $('#sports').css('color', 'white');
 	});
 	$("#residential").hover(function () {
@@ -27,17 +27,17 @@ $(document).ready(function () {
         $('#education').css('color', 'white');
         $('#commercial').css('color', 'white');
         $('#residential').css('color', 'gray');
-        $('#cultural').css('color', 'white');
+        $('#healthcare').css('color', 'white');
         $('#sports').css('color', 'white');
 	});
-	$("#cultural").hover(function () {
+	$("#healthcare").hover(function () {
 		$('#profile > h2').css('color', 'white');
         $('#portfolio > h2').css('color', 'white');
         $('#persons > h2').css('color', 'white');
         $('#education').css('color', 'white');
         $('#commercial').css('color', 'white');
         $('#residential').css('color', 'white');
-        $('#cultural').css('color', 'gray');
+        $('#healthcare').css('color', 'gray');
         $('#sports').css('color', 'white');
 	});
 	$("#sports").hover(function () {
@@ -47,7 +47,7 @@ $(document).ready(function () {
         $('#education').css('color', 'white');
         $('#commercial').css('color', 'white');
         $('#residential').css('color', 'white');
-        $('#cultural').css('color', 'white');
+        $('#healthcare').css('color', 'white');
         $('#sports').css('color', 'gray');
 	});
 	$("#education").click(function () {
@@ -60,7 +60,7 @@ $(document).ready(function () {
         $('#list-residential').animate({
             height: '0px'
         }, 100);
-        $('#list-cultural').animate({
+        $('#list-healthcare').animate({
             height: '0px'
         }, 100);
 		$('#list-sports').animate({
@@ -77,7 +77,7 @@ $(document).ready(function () {
         $('#list-residential').animate({
             height: '0px'
         }, 100);
-        $('#list-cultural').animate({
+        $('#list-healthcare').animate({
             height: '0px'
         }, 100);
 		$('#list-sports').animate({
@@ -94,14 +94,14 @@ $(document).ready(function () {
         $('#list-residential').animate({
             height: '100px'
         }, 100);
-        $('#list-cultural').animate({
+        $('#list-healthcare').animate({
             height: '0px'
         }, 100);
 		$('#list-sports').animate({
             height: '0px'
         }, 100);
 	});
-	$("#cultural").click(function () {
+	$("#healthcare").click(function () {
 		$('#list-education').animate({
             height: '0px'
         }, 100);
@@ -111,7 +111,7 @@ $(document).ready(function () {
         $('#list-residential').animate({
             height: '0px'
         }, 100);
-        $('#list-cultural').animate({
+        $('#list-healthcare').animate({
             height: '100px'
         }, 100);
 		$('#list-sports').animate({
@@ -128,7 +128,7 @@ $(document).ready(function () {
         $('#list-residential').animate({
             height: '0px'
         }, 100);
-        $('#list-cultural').animate({
+        $('#list-healthcare').animate({
             height: '0px'
         }, 100);
 		$('#list-sports').animate({

@@ -3,13 +3,15 @@
 	<link href="{{ STATIC_URL }}base.css"  rel='stylesheet' type='text/css'>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="{{ STATIC_URL }}js/header.js"></script>
-	<script src="{{ STATIC_URL }}js/info.js"></script>
+	<script src="{{ STATIC_URL }}js/info-ele.js"></script>
 	<script src="{{ STATIC_URL }}js/portfolio.js"></script>
 	<script src="{{ STATIC_URL }}js/slideshow.js"></script>
 	{% block include %}{% endblock %}
 </head>
 <body>
 	<div id="main-site">
+		<div id="slide-cover">
+		</div>
 		<div id="left">
 			<div id="slideshow">
 
@@ -19,6 +21,9 @@
 				
 			</div>
 			<div id="slide-buttons">
+				<img src="{{ STATIC_URL }}img/prev.png" id="prev">
+				<img src="{{ STATIC_URL }}img/pause.png" id="stop">
+				<img src="{{ STATIC_URL }}img/next.png" id="next">
 			</div>
 		</div>
 		<div id="middle">
@@ -26,6 +31,9 @@
 		<div id="right">
 			<div id="header">
 				<h1>W+CO</h1>
+			</div>
+			<div id="info-box">
+				
 			</div>
 			<div id="menu">
 				<div id="profile" class="menu-div">
@@ -39,36 +47,39 @@
 				<div id="primary-list-portfolio">
 					
 					
-					<h3 class="portfolio-element"  id="education">education</h3>
+					<h3 class="portfolio-element"  id="education">higher education</h3>
 					<div id="list-education" class="portfolio-list">
-						<h3>Tony Weber</h3>
-						<h3>Some Guy</h3>
-						<h3>Some Guy</h3>
+						<h3 id ="ed1" class="info-ele">Classroom</h3>
+						<h3 id ="ed2" class="info-ele">Auditorium</h3>
+						<h3 id ="ed3" class="info-ele">Laboratory</h3>
+						<h3 id ="ed4" class="info-ele">Library</h3>
+						<h3 id ="ed5" class="info-ele">Sports</h3>
 					</div>
 					<h3 class="portfolio-element"  id="commercial">commercial</h3>
 					<div id="list-commercial" class="portfolio-list">
-						<h3>Tony Weber</h3>
-						<h3>Some Guy</h3>
-						<h3>Some Guy</h3>
+						<h3 id ="comm1" class="info-ele">Commercial1</h3>
+						<h3 id ="comm2" class="info-ele">Commercial2</h3>
+						<h3 id ="comm3" class="info-ele">Commercial3</h3>
 					</div>
 					<h3 class="portfolio-element" id="residential">residential</h3>
 					<div id="list-residential" class="portfolio-list">
-						<h3>Tony Weber</h3>
-						<h3>Some Guy</h3>
-						<h3>Some Guy</h3>
+						<h3 id ="res1" class="info-ele">Residential1</h3>
+						<h3 id ="res2" class="info-ele">Residential2</h3>
+						<h3 id ="res3" class="info-ele">Residential3</h3>
 					</div>
-					<h3 class="portfolio-element"  id="cultural">cultural</h3>
-					<div id="list-cultural" class="portfolio-list">
-						<h3>Tony Weber</h3>
-						<h3>Some Guy</h3>
-						<h3>Some Guy</h3>
-					</div>
-					<h3 class="portfolio-element" id="sports">sports + leisure</h3>
+					<h3 class="portfolio-element" id="sports">sporting</h3>
 					<div id="list-sports" class="portfolio-list">
-						<h3>Tony Weber</h3>
-						<h3>Some Guy</h3>
-						<h3>Some Guy</h3>
+						<h3 id ="spo1" class="info-ele">Sports1</h3>
+						<h3 id ="spo2" class="info-ele">Sports2</h3>
+						<h3 id ="spo3" class="info-ele">Sports3</h3>
 					</div>
+					<h3 class="portfolio-element"  id="healthcare">healthcare</h3>
+					<div id="list-healthcare" class="portfolio-list">
+						<h3 id ="hel1" class="info-ele">Healthcare1</h3>
+						<h3 id ="hel2" class="info-ele">Healthcare2</h3>
+						<h3 id ="hel3" class="info-ele">Healthcare3</h3>
+					</div>
+					
 					
 
 				</div>
@@ -76,9 +87,9 @@
 					<h2>persons</h2>
 				</div>
 				<div id="primary-list-persons">
-					<h3 class="persons-element">Tony Weber</h3>
-					<h3 class="persons-element">Some Guy</h3>
-					<h3 class="persons-element">Some Guy</h3>
+					<h3  id="tweb" class="info-ele">Tony Weber</h3>
+					<h3  id="jsmi" class="info-ele">Joe Smith</h3>
+					<h3  id="japp" class="info-ele">Johnny Appleseed</h3>
 
 				</div>
 			</div>
