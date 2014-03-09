@@ -33,13 +33,13 @@ h3{
 	margin: auto;
 	position: relative;
 	margin-top: -350px;
-	width:80%;
+	width:1000px;
 	top: 50%;
 	height:700;
 }
 #left{
 	float: left;
-	width: 50%;
+	width: 450px;
 	height:100%;
 }
 #slideshow{
@@ -47,18 +47,17 @@ h3{
 	position: relative;
 	margin-top: -175px;
 	top :50%;
-	width:80%;
-	height:50%;
-	margin-left: 5px;
+	width:425px;
+	height:350px;
+	margin-left: 0px;
 }
 #slide-buttons{
 	margin: auto;
-	margin-top :60%;
-	margin-left: 5px;
+	margin-top: 350px;
 	border: 1px solid green;
 	display: inline-block;
-	width: 85%;
-	height: 10%;
+	width: 455px;
+	height: 75px;
 }
 #slideshow > img{
 	margin-left: auto;
@@ -128,8 +127,13 @@ h3{
 }
 .portfolio-list{
 	height: 0px;
-	overflow: hidden;
-	margin-left: 100px;
+	overflow: auto;
+	background-color: rgba(30,0,0,.8);
+	text-align: center;
+	width: 250px;
+}
+.portfolio-list::-webkit-scrollbar { 
+    display: none; 
 }
 #contact-info{
 	width:100%;

@@ -31,7 +31,7 @@ $(document).ready(function () {
         $('#profile > h2').css('color', 'white');
         $('#persons > h2').css('color', 'white');
         $('#primary-list-portfolio').animate({
-            height: '200px'
+            height: '300px'
         }, 100);
         $('#primary-list-persons').animate({
             height: '0px'
