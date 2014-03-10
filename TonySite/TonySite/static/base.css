@@ -5,6 +5,9 @@
 *{
 	color: white;
 }
+*::-webkit-scrollbar{
+	display: none;
+}
 body{
 	background-color: black;
 	margin: auto;
@@ -37,15 +40,6 @@ h3{
 	top: 50%;
 	height:700;
 }
-#slide-cover{
-	background-color: black;
-	float: left;
-	width: 450px;
-	margin-left: -452px;
-	height: 100%;
-	position: absolute;
-	z-index: 10;
-}
 #left{
 	float: left;
 	width: 450px;
@@ -61,10 +55,10 @@ h3{
 	margin-left: 0px;
 }
 #slide-buttons{
-	margin: auto;
 	margin-top: 370px;
+	margin-left: 0px;
 	display: inline-block;
-	width: 455px;
+	width: 425px;
 	height: 75px;
 }
 #slide-buttons > img{
@@ -77,13 +71,14 @@ h3{
 	cursor: pointer;
 }
 #prev{
-	float: left;
+	margin-left: -20px;
 }
 #stop{
-	margin-left: 75px;
+	margin-left: 80px;
 }
 #next{
 	float: right;
+	margin-right: -20px;
 }
 #slideshow > img{
 	margin-left: auto;
@@ -100,7 +95,7 @@ h3{
 	display: inline-block;
 	background-color: white;
 	width: 1px;
-	margin-left: 20px;
+	margin-left: 60px;
 	height: 100%;
 }
 
@@ -113,10 +108,11 @@ h3{
 #header{
 	width: 100%;
 	position: absolute;
+	margin-top: -27px;
 	height: 10%;
 }
 #menu{
-	margin-left: -175px;
+	margin-left: -70px;
 	margin-top: 150px;
 }
 #persons{
@@ -165,7 +161,7 @@ h3{
 }
 #contact-info{
 	position: absolute;
-	top: 600px;
+	top: 624px;
 }
 .gray{
 	color: gray;
@@ -173,13 +169,15 @@ h3{
 #info-box{
 	width: 300px;
 	position: absolute;
-	margin-left: 100px;
+	margin-left: 200px;
 	height: 400px;
-	overflow: auto;
-	margin-top: 150px;
+	margin-top: 126px;
 }
 #info-content{
-	margin-left: 10px;
+	margin-left: 30px;
+	height: 325px;
+
+	overflow: auto;
 }
 #contact-info-text{
 	text-align: center;

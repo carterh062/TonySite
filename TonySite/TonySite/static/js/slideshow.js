@@ -1,144 +1,55 @@
-var stopped = false;
 var i;
+var count;
 $(document).ready(function () {
-	console.log("stopped" + stopped);
-if(!stopped){
-    $('#slideshow :nth-child(3)').css('left', '0');
-	    i = setInterval(function () {
-	            $('#slideshow :nth-child(3)').animate({
-	                left: '-1100px'
-	            }, {
-	                duration: 1000,
-	                queue: false
-	            })
-	            setTimeout(function () {
-	                $('#slideshow :nth-child(3)').prev('img').animate({
-	                    left: '0'
-	                }, {
-	                    duration: 1000,
-	                    queue: false
-	                })
-	            }, 1000);
-	            setTimeout(function () {
-	                $('#slideshow :nth-child(3)').prev().prev('img').css('left','0').animate({
-	                    left: '30px'
-	                }, {
-	                    duration: 200,
-	                    queue: false
-	                })
-	                    .end().end().prependTo('#slideshow');
-	            }, 2000);
-	        },
-	        8000);
-}
+	count = $("#slideshow img").length;
+	console.log(count);
+	for(var i=1;i<=count;i++){
+		$('#slideshow:nth-child(' + count +')').fadeTo(1000,0.0);
+	}
+		i = setInterval(function () {
+			$('#slideshow :nth-child(' + count + ')').fadeTo(1000,0.0);
+			$('#slideshow :nth-child(' + count + ')').prev('img').fadeTo(1000,1.0);
+			setTimeout(function () {
+			$('#slideshow :nth-child(' + count + ')').prependTo('#slideshow');
+		},1000);
+		},
+		5000);
+	
 	$('#stop').click(function(){
-		 stopped = true;
-		 clearInterval(i);
+		
+		clearInterval(i);
 	});
 	$('#next').click(function(){
-		stopped = false;
-		$('#slideshow :nth-child(3)').animate({
-	                left: '-1100px'
-	            }, {
-	                duration: 1000,
-	                queue: false
-	            })
-	            setTimeout(function () {
-	                $('#slideshow :nth-child(3)').prev('img').animate({
-	                    left: '0'
-	                }, {
-	                    duration: 1000,
-	                    queue: false
-	                })
-	            }, 1000);
-	            setTimeout(function () {
-	                $('#slideshow :nth-child(3)').prev().prev('img').css('left','0').animate({
-	                    left: '30px'
-	                }, {
-	                    duration: 200,
-	                    queue: false
-	                })
-	                    .end().end().prependTo('#slideshow');
-	            }, 2000);
-	            clearInterval(i);
-	            i = setInterval(function () {
-	            $('#slideshow :nth-child(3)').animate({
-	                left: '-1100px'
-	            }, {
-	                duration: 1000,
-	                queue: false
-	            })
-	            setTimeout(function () {
-	                $('#slideshow :nth-child(3)').prev('img').animate({
-	                    left: '0'
-	                }, {
-	                    duration: 1000,
-	                    queue: false
-	                })
-	            }, 1000);
-	            setTimeout(function () {
-	                $('#slideshow :nth-child(3)').prev().prev('img').css('left','0').animate({
-	                    left: '30px'
-	                }, {
-	                    duration: 200,
-	                    queue: false
-	                })
-	                    .end().end().prependTo('#slideshow');
-	            }, 2000);
-	        },
-	        8000);
+		
+		$('#slideshow :nth-child(' + count + ')').fadeTo(1000,0.0);
+		$('#slideshow :nth-child(' + count + ')').prev('img').fadeTo(1000,1.0);
+		setTimeout(function () {
+			$('#slideshow :nth-child(' + count + ')').prependTo('#slideshow');
+		},1000);
+		clearInterval(i);
+		i = setInterval(function () {
+			$('#slideshow :nth-child(' + count + ')').fadeTo(1000,0.0);
+			$('#slideshow :nth-child(' + count + ')').prev('img').fadeTo(1000,1.0);
+			setTimeout(function () {
+			$('#slideshow :nth-child(' + count + ')').prependTo('#slideshow');
+		},1000);
+		},
+		5000);
 	});
 	$('#prev').click(function(){
-		stopped = false;
-		$('#slideshow :nth-child(3)').animate({
-	                left: '-1100px'
-	            }, {
-	                duration: 1000,
-	                queue: false
-	            })
-	            setTimeout(function () {
-	                $('#slideshow :nth-child(3)').prev('img').animate({
-	                    left: '0'
-	                }, {
-	                    duration: 1000,
-	                    queue: false
-	                })
-	            }, 1000);
-	            setTimeout(function () {
-	                $('#slideshow :nth-child(3)').prev().prev('img').css('left','0').animate({
-	                    left: '30px'
-	                }, {
-	                    duration: 200,
-	                    queue: false
-	                })
-	                    .end().end().prependTo('#slideshow');
-	            }, 2000);
-	            clearInterval(i);
-	            i = setInterval(function () {
-	            $('#slideshow :nth-child(3)').animate({
-	                left: '-1100px'
-	            }, {
-	                duration: 1000,
-	                queue: false
-	            })
-	            setTimeout(function () {
-	                $('#slideshow :nth-child(3)').prev('img').animate({
-	                    left: '0'
-	                }, {
-	                    duration: 1000,
-	                    queue: false
-	                })
-	            }, 1000);
-	            setTimeout(function () {
-	                $('#slideshow :nth-child(3)').prev().prev('img').css('left','0').animate({
-	                    left: '30px'
-	                }, {
-	                    duration: 200,
-	                    queue: false
-	                })
-	                    .end().end().prependTo('#slideshow');
-	            }, 2000);
-	        },
-	        8000);
+		$('#slideshow :nth-child(' + count + ')').fadeTo(1000,0.0);
+		$('#slideshow :nth-child(' + count + ')').prev('img').prev('img').fadeTo(1000,1.0);
+		setTimeout(function () {
+			$('#slideshow :nth-child(' + count + ')').prependTo('#slideshow');
+		},1000);	
+		clearInterval(i);
+		i = setInterval(function () {
+			$('#slideshow :nth-child(' + count + ')').fadeTo(1000,0.0);
+			$('#slideshow :nth-child(' + count + ')').prev('img').fadeTo(1000,1.0);
+			setTimeout(function () {
+			$('#slideshow :nth-child(' + count + ')').prependTo('#slideshow');
+		},1000);
+		},
+		5000);
 	});
 });
