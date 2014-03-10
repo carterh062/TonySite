@@ -1,4 +1,4 @@
 *.mov
 .DS_Store
-settings.py
-*.pyc
+TonySite/TonySite/settings.py
+TonySite/TonySite/settings.pyc
