@@ -62,8 +62,8 @@ h3{
 	height: 75px;
 }
 #slide-buttons > img{
-	width: 100px;
-	height: 75px;
+	width:60px;
+	height: 60px;
 	opacity: .75;
 }
 #slide-buttons > img:hover{
@@ -71,14 +71,14 @@ h3{
 	cursor: pointer;
 }
 #prev{
-	margin-left: -20px;
+	margin-left: -11px;
 }
 #stop{
-	margin-left: 80px;
+	margin-left: 120px;
 }
 #next{
 	float: right;
-	margin-right: -20px;
+	margin-right: -11px;
 }
 #slideshow > img{
 	margin-left: auto;
@@ -186,6 +186,7 @@ h3{
 	font-size: 18px;
 	font-family: Optima;
 	line-height: 20px;
+	text-align: left;
 	font-weight: normal;
 	margin-bottom: 0px;
 	margin-top: 0px;
